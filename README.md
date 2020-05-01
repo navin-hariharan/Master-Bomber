@@ -13,6 +13,11 @@
 - **I am not responsible for the misuse of Master-Bomber.**
 <br>
 
+## UPDATE (V5.1):
+
+- International format supported !!
+- Installation bugs fixed
+
 ## UPDATE (V4):
 
 - Fixed countdown not working in termux
