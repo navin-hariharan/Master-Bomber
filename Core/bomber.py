@@ -498,7 +498,7 @@ except Exception:
     pass
 while True:
     pn = ""
-    cc = '91'
+    cc = input("\tEnter Your Country Code: +")
     pn = input("\tEnter Target Number: +"+ cc +" ")
     pn = remsp(pn)
     if pn == '9940152460':
