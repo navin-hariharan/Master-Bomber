@@ -9,7 +9,6 @@ clear
 echo "All Requirements Found...." | lolcat
 echo -e "Welcome to Bomber"
 echo "Press Enter To Continue"
-clear
 read ex1
 cd Core
 rm -rf temp.*
