@@ -7,8 +7,8 @@ sleep 3
 if [[ -s update.Navin ]];then
 clear
 echo "All Requirements Found...." | lolcat
-echo -e "Welcome to Bomber"
-echo "Press Enter To Continue"
+echo -e "Welcome to Bomber" | lolcat
+echo "Press Enter To Continue" | lolcat
 read ex1
 cd Core
 rm -rf temp.*
@@ -96,11 +96,11 @@ clear
 echo '''INSTALLED ALL NECESSARY FILES!!''' | lolcat
 sleep 3
 echo "STARTING BOMBER" | lolcat
-echo -ne '. \r'
+echo -ne '. \r' | lolcat
 sleep 1
-echo -ne '.... \r'
+echo -ne '.... \r' | lolcat
 sleep 1
-echo -ne '........\r'
+echo -ne '........\r' | lolcat
 sleep 1
 echo -ne '\n'
 else
