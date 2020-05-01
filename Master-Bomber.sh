@@ -55,7 +55,7 @@ rm -rf lolcat
 fi
 
 
-echo 'This Script Was Made By Navin : Version 4' >update.Navin
+echo 'This Script Was Made By Navin : Version 5' >update.Navin
 
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
