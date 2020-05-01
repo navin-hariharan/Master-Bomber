@@ -1,19 +1,19 @@
 #!/bin/bash
 clear
+python3 version_check.py
+sleep 3
+
+
+if [[ -s update.Navin ]];then
+clear
+echo "All Requirements Found...." | lolcat
 echo -e "Welcome to Bomber"
 echo "Press Enter To Continue"
+clear
 read ex1
 cd Core
 rm -rf temp.*
 rm -rf *.xxx
-cd ..
-python3 version_check.py
-
-
-
-if [[ -s update.Navin ]];then
-echo "All Requirements Found...." | lolcat
-clear
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 toilet -f ivrit 'Linux' | boxes -d cat -a hc -p h8 | lolcat
 echo "Press Enter To Continue" | lolcat
@@ -24,22 +24,26 @@ fi
 
 else
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-apt install toilet pip
-pip install boxes
+apt install toilet python3-pip
+pip3 install boxes
 pip3 install -r requirements.txt
-pip install -r requirements.txt 
 else
-apt install toilet
+pkg install toilet python
 pip install -r requirements.txt
 fi
 
 echo 'Installing Requirements....'
 echo .
 echo .
-apt install ruby figlet python curl tor openssl pip toilet -y
-pip install termdown fortune cowsay fake_useragent
-pip2 install termdown fortune cowsay fake_useragent
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+apt install ruby figlet python curl tor openssl python3-pip toilet -y
 pip3 install termdown fortune cowsay fake_useragent
+else
+pkg install ruby figlet python curl tor openssl toilet -y
+pip install termdown fortune cowsay fake_useragent
+fi
+
+
 if ! gem spec lolcat > /dev/null 2>&1; then
 git clone https://github.com/busyloop/lolcat
 cd lolcat
@@ -49,17 +53,26 @@ cd ..
 cd ..
 rm -rf lolcat
 fi
+
+
 echo 'This Script Was Made By Navin : Version 4' >update.Navin
+
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 if grep -q "bomb" /root/.bashrc; then
 echo "Found...Skipping"
+sleep 2
 clear
+
+
 else
 echo ' ' >> /root/.bashrc
 echo 'alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.sh";' >> /root/.bashrc
 alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.sh";
 clear
 fi
+
+
 else
 cd
 cd ..
@@ -67,7 +80,10 @@ cd usr
 cd etc
 if grep -q "bomb" bash.bashrc; then
 echo "Found...Skipping"
+sleep 2
 clear
+
+
 else
 echo 'alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.sh";' >> bash.bashrc
 echo 'clear' >> bash.bashrc
@@ -76,9 +92,25 @@ alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.
 clear
 fi
 fi
-echo -e "\e[1;32m Please Restart Bomber By Tying bomb in terminal."| lolcat
+if [[ -s update.Navin ]];then
+clear
+echo '''INSTALLED ALL NECESSARY FILES!!''' | lolcat
+sleep 3
+echo "STARTING BOMBER" | lolcat
+echo -ne '. \r'
+sleep 1
+echo -ne '.... \r'
+sleep 1
+echo -ne '........\r'
+sleep 1
+echo -ne '\n'
+else
+echo '''ERROR INSTALLING FILES!!'''
 exit 0
 fi
+fi
+
+
 while :
 do
 rm *.xxx >/dev/null 2>&1
@@ -109,6 +141,8 @@ echo "Press 7 To  View  Features "| lolcat
 echo "Press 0 To  Exit"| lolcat
 cd Core
 read ch
+
+
 if [ $ch -eq '1' ];then
 while :
 do
@@ -286,12 +320,14 @@ done
 elif [ $ch -eq '4' ];then
 clear
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-toilet -f ivrit 'CUSTOM SMS' | boxes -d cat -a hc -p h8 | lolcat
+toilet -f ivrit 'MAIL BOMBER' | boxes -d cat -a hc -p h8 | lolcat
 else
-cowsay "CUSTOM SMS" | lolcat
+cowsay "MAIL BOMBER" | lolcat
 fi
 python2 mail-bomb.py
 exit 0
+
+
 
 elif [ $ch -eq '5' ];then
 clear
@@ -303,6 +339,9 @@ fi
 python3 sms.py
 exit 0
 
+
+
+
 elif [ $ch -eq '6' ];then
 clear
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
@@ -312,6 +351,8 @@ cowsay "Mailer" | lolcat
 fi
 python3 mail.py
 exit 0
+
+
 
 elif [ $ch -eq '7' ];then
 clear

@@ -47,7 +47,7 @@ To use the bomber type the following commands in Termux:
 ```
 pkg install git
 pkg install python
-git clone https://github.com/pepperjack1210/Master-Bomber
+git clone https://github.com/navin-hariharan/Master-Bomber
 cd Master-Bomber
 chmod +x Master-Bomber.sh
 ./Master-Bomber.sh
@@ -65,7 +65,7 @@ Commands below provide instructions for Debian-based systems.
 To use the bomber type the following commands in Linux terminal:
 ```
 sudo apt install git
-git clone https://github.com/pepperjack1210/Master-Bomber
+git clone https://github.com/navin-hariharan/Master-Bomber
 cd Master-Bomber
 chmod +x Master-Bomber.sh
 ./Master-Bomber.sh
