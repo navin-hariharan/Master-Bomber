@@ -2,16 +2,6 @@
 clear
 python3 version_check.py
 sleep 3
-if ! gem spec lolcat > /dev/null 2>&1; then
-git clone https://github.com/busyloop/lolcat
-cd lolcat
-cd bin
-gem install lolcat
-cd ..
-cd ..
-rm -rf lolcat
-fi
-
 
 if [[ -s update.Navin ]];then
 clear
@@ -48,7 +38,7 @@ else
 pkg install ruby figlet python curl tor openssl toilet -y
 pip install termdown fortune cowsay fake_useragent
 fi
-echo 'This Script Was Made By Navin : Version 5.3' >update.Navin
+echo 'This Script Was Made By Navin : Version 5.4' >update.Navin
 sleep 3
 
 
@@ -98,6 +88,7 @@ cd Core
 rm -rf temp.*
 rm -rf *.xxx
 rm *.xxx >/dev/null 2>&1
+cd ..
 clear
 echo -e "\e[1;31m"
 echo -e "\e[1;34m Created By \e[1;32m" | lolcat
@@ -370,6 +361,7 @@ clear
 
 elif [ $ch -eq '0' ];then
 exit 0
+echo "EXITED" | lolcat
 
 else
 clear
