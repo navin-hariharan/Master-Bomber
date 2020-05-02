@@ -528,7 +528,7 @@ while True:
             print('\n\nPhone Number Must Consist Of Numbers Only\n')
             continue
     break
-os.system ("termdown"' '+ timer)
+os.system ("termdown"' '+ timer +' |lolcat')
 type = 0
 try:
     if sys.argv[1] == "call":
