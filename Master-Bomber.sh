@@ -90,24 +90,7 @@ alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.
 clear
 fi
 fi
-
-
-if [[ -s update.Navin ]];then
-clear
-echo '''INSTALLED ALL NECESSARY FILES!!''' | lolcat
-sleep 3
-echo "STARTING BOMBER" | lolcat
-echo -ne '. \r' | lolcat
-sleep 1
-echo -ne '.... \r' | lolcat
-sleep 1
-echo -ne '........\r' | lolcat
-sleep 1
-echo -ne '\n'
-else
-echo '''ERROR INSTALLING FILES!!'''
-exit 0
-fi
+bomb
 fi
 
 
