@@ -2,6 +2,15 @@
 clear
 python3 version_check.py
 sleep 3
+if ! gem spec lolcat > /dev/null 2>&1; then
+git clone https://github.com/busyloop/lolcat
+cd lolcat
+cd bin
+gem install lolcat
+cd ..
+cd ..
+rm -rf lolcat
+fi
 
 
 if [[ -s update.Navin ]];then
@@ -39,20 +48,7 @@ else
 pkg install ruby figlet python curl tor openssl toilet -y
 pip install termdown fortune cowsay fake_useragent
 fi
-
-
-if ! gem spec lolcat > /dev/null 2>&1; then
-git clone https://github.com/busyloop/lolcat
-cd lolcat
-cd bin
-gem install lolcat
-cd ..
-cd ..
-rm -rf lolcat
-fi
-
-
-echo 'This Script Was Made By Navin : Version 5.2' >update.Navin
+echo 'This Script Was Made By Navin : Version 5.3' >update.Navin
 sleep 3
 
 
