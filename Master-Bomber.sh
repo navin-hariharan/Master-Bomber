@@ -10,10 +10,8 @@ echo "All Requirements Found...." | lolcat
 echo -e "Welcome to Bomber" | lolcat
 echo "Press Enter To Continue" | lolcat
 read ex1
-rm -rf temp.*
-rm -rf *.xxx
-
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
+clear
 toilet -f ivrit 'Linux' | boxes -d cat -a hc -p h8 | lolcat
 echo "Press Enter To Continue" | lolcat
 read ex1
@@ -117,6 +115,9 @@ fi
 
 while :
 do
+cd Core
+rm -rf temp.*
+rm -rf *.xxx
 rm *.xxx >/dev/null 2>&1
 clear
 echo -e "\e[1;31m"
@@ -143,7 +144,6 @@ echo "Press 5 To  Send Custom-Sms "| lolcat
 echo "Press 6 To  Anonymous Mail "| lolcat
 echo "Press 7 To  View  Features "| lolcat
 echo "Press 0 To  Exit"| lolcat
-cd Core
 read ch
 
 
