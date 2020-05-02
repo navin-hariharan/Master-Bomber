@@ -10,9 +10,9 @@ echo "All Requirements Found...." | lolcat
 echo -e "Welcome to Bomber" | lolcat
 echo "Press Enter To Continue" | lolcat
 read ex1
-cd Core
 rm -rf temp.*
 rm -rf *.xxx
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 toilet -f ivrit 'Linux' | boxes -d cat -a hc -p h8 | lolcat
 echo "Press Enter To Continue" | lolcat
@@ -54,7 +54,8 @@ rm -rf lolcat
 fi
 
 
-echo 'This Script Was Made By Navin : Version 5' >update.Navin
+echo 'This Script Was Made By Navin : Version 5.2' >update.Navin
+sleep 3
 
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
@@ -91,6 +92,8 @@ alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.
 clear
 fi
 fi
+
+
 if [[ -s update.Navin ]];then
 clear
 echo '''INSTALLED ALL NECESSARY FILES!!''' | lolcat
@@ -108,6 +111,8 @@ echo '''ERROR INSTALLING FILES!!'''
 exit 0
 fi
 fi
+
+
 
 
 while :
