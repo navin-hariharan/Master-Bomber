@@ -128,8 +128,7 @@ echo "Press 6 To  Anonymous Mail "| lolcat
 echo "Press 7 To  View  Features "| lolcat
 echo "Press 0 To  Exit"| lolcat
 read ch
-
-
+cd Core
 if [ $ch -eq '1' ];then
 while :
 do
