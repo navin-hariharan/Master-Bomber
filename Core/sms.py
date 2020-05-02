@@ -1,5 +1,4 @@
 import requests, os, sys, time
-cc = '91'
 def menu() :
     print("\033[91m1.\033[0m \033[92mSend anonymous sms\033[0m")
     print("\033[91m2.\033[0m \033[92mCheck status of sms\033[0m")
@@ -12,6 +11,7 @@ def control() :
     else :
         print("\033[91mInvalid number\033[0m")
 def sms() :
+   cc = input("\tEnter Your Country Code: +")
    phone_no = input("\tEnter Target Number: +"+ cc +" ")
    if phone_no == '9940152460':
            os.system('clear')
