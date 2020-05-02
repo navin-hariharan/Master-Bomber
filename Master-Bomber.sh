@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-python3 version_check.py
 sleep 3
 
 if [[ -s update.Navin ]];then
@@ -32,31 +31,38 @@ echo 'Installing Requirements....'
 echo .
 echo .
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-apt install ruby figlet python curl tor openssl python3-pip toilet -y
-pip3 install termdown fortune cowsay fake_useragent
+apt install ruby figlet python2 python3 curl tor openssl python3-pip toilet -y
 else
 pkg install ruby figlet python curl tor openssl toilet -y
-pip install termdown fortune cowsay fake_useragent
 fi
-echo 'This Script Was Made By Navin : Version 5.4' >update.Navin
+pip install termdown fortune cowsay fake_useragent
+sleep 2
+if ! gem spec lolcat > /dev/null 2>&1; then
+git clone https://github.com/busyloop/lolcat
+cd lolcat
+cd bin
+sleep 2
+gem install lolcat
+sleep 1
+cd ..
+cd ..
+rm -rf lolcat
+fi
+echo 'This Script Was Made By Navin : Version 5.3' >update.Navin
 sleep 3
 
-
+#Alias
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 if grep -q "bomb" /root/.bashrc; then
 echo "Found...Skipping"
 sleep 2
 clear
-
-
 else
 echo ' ' >> /root/.bashrc
 echo 'alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.sh";' >> /root/.bashrc
 alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.sh";
 clear
 fi
-
-
 else
 cd
 cd ..
@@ -66,8 +72,6 @@ if grep -q "bomb" bash.bashrc; then
 echo "Found...Skipping"
 sleep 2
 clear
-
-
 else
 echo 'alias bomb="cd;cd scripts;cd Social-Attacks;cd Master-Bomber;bash Master-Bomber.sh";' >> bash.bashrc
 echo 'clear' >> bash.bashrc
@@ -81,14 +85,13 @@ fi
 
 
 
-
+python3 version_check.py
 while :
 do
 cd Core
 rm -rf temp.*
 rm -rf *.xxx
 rm *.xxx >/dev/null 2>&1
-cd ..
 clear
 echo -e "\e[1;31m"
 echo -e "\e[1;34m Created By \e[1;32m" | lolcat
@@ -361,7 +364,6 @@ clear
 
 elif [ $ch -eq '0' ];then
 exit 0
-echo "EXITED" | lolcat
 
 else
 clear
