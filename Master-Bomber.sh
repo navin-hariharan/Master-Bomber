@@ -363,6 +363,8 @@ clear
 
 
 elif [ $ch -eq '0' ];then
+clear
+toilet -f ivrit 'Exited' | boxes -d cat -a hc -p h8 | lolcat
 exit 0
 
 else
