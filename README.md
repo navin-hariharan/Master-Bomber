@@ -1,7 +1,7 @@
 <h1 align="center">Master-Bomber</h1>
 <p align="center">An open-source SMS/call/Mail bomber for Linux And Termux.</p><br>
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/navin-hariharan/Master-Bomber/blob/master/Master-Bomber.png"><br>
 </p>
 
