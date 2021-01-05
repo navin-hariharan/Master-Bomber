@@ -1,0 +1,7 @@
+certifi
+chardet
+colorama
+urllib3
+idna
+requests
+boxes
