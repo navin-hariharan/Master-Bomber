@@ -138,7 +138,7 @@ def readisdc():
         isdcodes = json.load(file)
     return isdcodes
 def get_version():
-    return open("../.update","r").read().strip()
+    return open("version.txt","r").read().strip()
 def clr():
     if os.name == "nt":
         os.system("cls")
@@ -295,13 +295,10 @@ parser = argparse.ArgumentParser(description=description,epilog='Coded by SpeedX
 parser.add_argument("-sms","--sms", action="store_true",help="Sms Bomber")
 parser.add_argument("-call","--call", action="store_true",help="Call Bomber")
 parser.add_argument("-mail","--mail", action="store_true",help="Mail Bomber")
-#parser.add_argument("-anonmail","--anonmail", action="store_true",help="Anonymous Mail")
 if __name__ == "__main__":
     args = parser.parse_args()
     if args.mail:
-        mail()
-    if args.anonmail:
-        anonmail()       
+        mail()     
     elif args.call:
         selectnode(mode="call")
     elif args.sms:
