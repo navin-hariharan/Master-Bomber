@@ -2,7 +2,7 @@
 <p align="center">An open-source SMS/call/Mail bomber for Linux And Termux.</p><br>
 
 <p align="center">
-  <img src="https://github.com/navin-hariharan/Master-Bomber/blob/master/Master-Bomber.png"><br>
+  <img src="https://github.com/navin-hariharan/Master-Bomber/blob/master/MasterBomber.png"><br>
 </p>
 
 ## Note:
@@ -16,6 +16,12 @@
 - This script is only for educational purposes or to prank.
 - **I am not responsible for the misuse of Master-Bomber.**
 <br>
+
+
+## UPDATE (V 2020.1):
+
+- Bug Fixes and patches
+- We had to remove few features that wre outdatted and not working 😔
 
 ## UPDATE (V5.2):
 
