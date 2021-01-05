@@ -17,7 +17,7 @@ RED, WHITE, CYAN, GREEN, DEFAULT = '\033[91m', '\033[46m', '\033[36m', '\033[1;3
 def verCheck():
     system('clear')
     print("{1}[{0}>{1}] {0}Checking For Updates{2}...".format(GREEN, RED, DEFAULT ))
-    ver_url = 'https://raw.githubusercontent.com/navin-hariharan/Master-Bomber/master/version.txt'
+    ver_url = 'https://raw.githubusercontent.com/navin-hariharan/Master-Bomber/master/Core/version.txt'
     ver_rqst = requests.get(ver_url)
     ver_sc = ver_rqst.status_code
     if ver_sc == 200:
