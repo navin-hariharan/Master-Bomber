@@ -1,4 +1,5 @@
 certifi
+tqdm
 chardet
 colorama
 urllib3

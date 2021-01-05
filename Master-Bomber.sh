@@ -62,25 +62,20 @@ init_environ(){
 
 install_deps(){
     packages=(openssl git ruby boxes $PYTHON $PYTHON-pip figlet toilet)
-    if [ -n "$INSTALL" ];then
-        for package in ${packages[@]}; do
-            $INSTALL $package
-        done
-        pip install -r requirements.txt
-        if ! gem spec lolcat > /dev/null 2>&1; then
-        git clone https://github.com/busyloop/lolcat
-        cd lolcat
-        cd bin
-        sleep 2
-        gem install lolcat
-        sleep 1
-        cd ..
-        cd ..
-        rm -rf lolcat
-        fi
-    else
-        echo "We could not install dependencies."
-        exit
+    for package in ${packages[@]}; do
+        $INSTALL $package
+    done
+    pip install -r requirements.txt
+    if ! gem spec lolcat > /dev/null 2>&1; then
+    git clone https://github.com/busyloop/lolcat
+    cd lolcat
+    cd bin
+    sleep 2
+    gem install lolcat
+    sleep 1
+    cd ..
+    cd ..
+    rm -rf lolcat
     fi
 }
 
