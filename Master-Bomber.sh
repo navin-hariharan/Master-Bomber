@@ -66,7 +66,7 @@ install_deps(){
         for package in ${packages[@]}; do
             $INSTALL $package
         done
-        $PIP install -r requirements.txt
+        pip install -r requirements.txt
         if ! gem spec lolcat > /dev/null 2>&1; then
         git clone https://github.com/busyloop/lolcat
         cd lolcat
@@ -122,7 +122,7 @@ else
     echo .
     echo .
     install_deps
-    echo 'This Script Was Made By Navin Hariharan : Version 5.5' > .update
+    echo 'This Script Was Made By Navin Hariharan' > .update
     echo 'Requirements Installed....'
     set_alias
     pause
