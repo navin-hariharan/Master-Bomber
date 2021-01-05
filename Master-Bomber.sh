@@ -62,9 +62,16 @@ init_environ(){
 
 install_deps(){
     packages=(openssl git ruby boxes $PYTHON $PYTHON-pip figlet toilet)
-    for package in ${packages[@]}; do
-        $INSTALL $package
-    done
+    
+    if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        for package in ${packages[@]}; do
+            apt-get -y install $package
+        done    
+    else
+        for package in ${packages[@]}; do
+            pkg -y install $package
+        done 
+    fi
     pip install -r requirements.txt
     if ! gem spec lolcat > /dev/null 2>&1; then
     git clone https://github.com/busyloop/lolcat
