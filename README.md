@@ -17,19 +17,11 @@
 - **I am not responsible for the misuse of Master-Bomber.**
 <br>
 
-## UPDATE (V5.2):
+## UPDATE (2020.1):
 
-- Bug Fixes and patches
-
-## UPDATE (V5.1):
-
-- International format supported !!
-- Installation bugs fixed
-
-## UPDATE (V4):
-
-- Fixed countdown not working in termux
-- Mail bomber added
+- Removed features that are no more working 😞
+- Improved persistence 
+- Code rewritten
 
 ## Features:
 
@@ -49,8 +41,7 @@ Run these commands to run Master-Bomber
 
 ### > For Termux:
 ```
-pkg install git
-pkg install python
+pkg install git python
 git clone https://github.com/navin-hariharan/Master-Bomber
 cd Master-Bomber
 chmod +x Master-Bomber.sh
