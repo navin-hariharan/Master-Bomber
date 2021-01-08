@@ -60,7 +60,7 @@ class MessageDecorator(object):
 class APIProvider:
 
     api_providers=[]
-    delay = 0
+    delay = 1
     status = True
 
     def __init__(self,cc,target,mode,delay=0):
@@ -186,7 +186,6 @@ def workernode(mode,cc,target,count,delay,max_threads):
     mesgdcrt.GeneralMessage("Please stay connected to the internet during bombing")
     mesgdcrt.GeneralMessage("Target        : " + cc + target)
     mesgdcrt.GeneralMessage("Amount        : " + str(count) )
-    mesgdcrt.GeneralMessage("Delay         : " + str(delay) + " seconds")
     mesgdcrt.WarningMessage("This tool was made for fun and research purposes only")
     print()
     if len(APIProvider.api_providers)==0:
@@ -236,8 +235,8 @@ def selectnode(mode="sms"):
                     mesgdcrt.WarningMessage("You have requested " + str(count) + " {type}".format(type=mode.upper()))
                     mesgdcrt.GeneralMessage("Automatically capping the value to {limit}".format(limit=limit))
                     count = limit
-                delay = float(input(mesgdcrt.CommandMessage("Enter delay time (in seconds): ")).strip())
-                max_threads = 20
+                delay = 1
+                max_threads = 70
                 if (count < 0 or delay < 0):
                     raise Exception
                 break
