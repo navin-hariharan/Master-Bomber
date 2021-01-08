@@ -35,8 +35,8 @@
 
 - Lots of integrated SMS/call APIs
 - Unlimited and super-fast bombing
-- Custom SMS sender
-- Anonymous Mail sender
+- ~~Custom SMS sender~~
+- ~~Anonymous Mail sender~~
 - Call bombing
 - Frequent updates
 - Automatic updating mechanism
@@ -48,15 +48,6 @@
 Run these commands to run Master-Bomber
 
 ### > For Termux:
-
-**Notice:** 
-
-git installation methods are not universal and do differ between distributions,
-so, installing git as per instructions below may not work.
-Please check out how to install `git` for your Linux distribution.
-Commands below provide instructions for Debian-based systems.
-
-To use the bomber type the following commands in Termux:
 ```
 pkg install git
 pkg install python
@@ -67,17 +58,8 @@ chmod +x Master-Bomber.sh
 ```
 
 ### > For Linux:
-
-**Notice:** 
-
-git installation methods are not universal and do differ between distributions,
-so, installing git as per instructions below may not work.
-Please check out how to install `git` for your Linux distribution.
-Commands below provide instructions for Debian-based systems.
-
-To use the bomber type the following commands in Linux terminal:
 ```
-sudo apt install git
+sudo apt install git python
 git clone https://github.com/navin-hariharan/Master-Bomber
 cd Master-Bomber
 chmod +x Master-Bomber.sh
@@ -89,7 +71,6 @@ chmod +x Master-Bomber.sh
 Feel Free To Open An Issue...
 
 ```
-                 Mail: navin@cyberhakz.com
                  Instagram: navin_hariharan
 ```
 
