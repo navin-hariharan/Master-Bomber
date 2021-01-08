@@ -35,6 +35,7 @@ def verCheck():
             sleep(2)
             system("git clone https://github.com/navin-hariharan/Master-Bomber ../TEMP")
             system("cd ..;rm -rf  Master-Bomber;mv TEMP Master-Bomber;cd Master-Bomber;chmod +x *")
+            system("echo 'RESTART THE TERMINAL'")
     else:
         print('{1}[{0}^{1}] {0}Failed To Get Update [Status:{1}{3}{0}]\n'.format(GREEN, RED, DEFAULT))
 system("cd ..")
