@@ -121,6 +121,7 @@ else
     echo 'Installing Requirements....'
     echo .
     echo .
+    $PYTHON version_check.py || $PYTHON Core/version_check.py
     install_deps
     echo 'This Script Was Made By Navin Hariharan' > .update
     echo 'Requirements Installed....'
