@@ -1,13 +1,14 @@
 #!/bin/bash
+
 detect_distro() {
+    if [[ "$OSTYPE" == linux-android* ]]; then
+            distro="termux"
+    fi
     if [ -z "$distro" ]; then
         distro=$(ls /etc | awk 'match($0, "(.+?)[-_](?:release|version)", groups) {if(groups[1] != "os") {print groups[1]}}')
     fi
-
     if [ -z "$distro" ]; then
-        if [[ "$OSTYPE" == linux-android* ]]; then
-            distro="termux"
-        elif [ -f "/etc/os-release" ]; then
+        if [ -f "/etc/os-release" ]; then
             distro="$(source /etc/os-release && echo $ID)"
         elif [ "$OSTYPE" == "darwin" ]; then
             distro="darwin"
@@ -17,6 +18,9 @@ detect_distro() {
     fi
 }
 
+pause() {
+    read -n1 -r -p "Press any key to continue..." key
+}
 
 banner() {
     clear
@@ -28,7 +32,6 @@ banner() {
     echo 'This Bomber Was Created By Navin' | lolcat
     echo 'For Any Queries Contact Me!!!'| lolcat
     echo 'Intagram:- navin_hariharan'| lolcat
-    echo 'Whatsapp: +917305574234'| lolcat
     echo ' '| lolcat
     echo 'Please use for Educational Purpose only!!!'| lolcat
     echo ' '| lolcat
@@ -67,20 +70,22 @@ install_deps(){
             $SUDO $INSTALL $package
         done
         $PIP install -r requirements.txt
+        if ! gem spec lolcat > /dev/null 2>&1; then
+    	git clone https://github.com/busyloop/lolcat
+    	cd lolcat
+    	cd bin
+    	sleep 2
+    	gem install lolcat
+    	sleep 1
+    	cd ..
+    	cd ..
+    	rm -rf lolcat
+    	else
+    	    echo "Can't Install lolcat"
+    	fi
     else
         echo "We could not install dependencies."
         exit
-    fi
-    if ! gem spec lolcat > /dev/null 2>&1; then
-    git clone https://github.com/busyloop/lolcat
-    cd lolcat
-    cd bin
-    sleep 2
-    gem install lolcat
-    sleep 1
-    cd ..
-    cd ..
-    rm -rf lolcat
     fi
 }
 
@@ -112,7 +117,8 @@ set_alias(){
     fi
 }
 
-
+banner
+pause
 detect_distro
 init_environ
 if [ -f .update ];then
