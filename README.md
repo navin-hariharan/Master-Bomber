@@ -66,4 +66,7 @@ Feel Free To Open An Issue...
 ```
 
 <a href="https://www.instagram.com/navin_hariharan/">Check Out My Instagram Profile</a>
-<a href="https://www.instagram.com/navin_hariharan/"><img alt="Qries" src="https://www.qries.com/images/banner_logo.png"width=56" height="56"></a>
+<a href="https://www.instagram.com/navin_hariharan/">
+         <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
+         width=150" height="70">
+      </a>
