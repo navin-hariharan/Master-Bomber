@@ -26,14 +26,15 @@
 ## Features:
 
 - Lots of integrated SMS/call APIs
-- Unlimited and super-fast bombing
-- ~~Custom SMS sender~~
-- ~~Anonymous Mail sender~~
-- Call bombing
+- Unlimited and super-fast SMS bombing
+- Unlimited and super-fast CALL bombing
+- Unlimited and super-fast MAIL bombing
 - Frequent updates
 - Automatic updating mechanism
 - Easy to use and embed in code
 - Colourful UI
+- ~~Custom SMS sender~~
+- ~~Anonymous Mail sender~~
 
 ## Usage:
 
