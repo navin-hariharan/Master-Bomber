@@ -65,5 +65,3 @@ Feel Free To Open An Issue...
 ```
                  Instagram: navin_hariharan
 ```
-
-<a href="https://www.instagram.com/navin_hariharan/">Check Out My Instagram Profile</a>
