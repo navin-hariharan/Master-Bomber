@@ -55,5 +55,5 @@ sudo apt install git python;cd;cd scripts;cd Social-Attacks;git clone https://g
 Feel Free To Open An Issue...
 
 ```
-                 Instagram: navin_hariharan
+Instagram: navin_hariharan
 ```
