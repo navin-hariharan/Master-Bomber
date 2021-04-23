@@ -47,11 +47,7 @@ pkg install git python;cd;cd scripts;cd Social-Attacks;git clone https://github
 
 ### > For Linux:
 ```
-sudo apt install git python
-git clone https://github.com/navin-hariharan/Master-Bomber
-cd Master-Bomber
-chmod +x Master-Bomber.sh
-./Master-Bomber.sh
+sudo apt install git python;cd;cd scripts;cd Social-Attacks;git clone https://github.com/navin-hariharan/Master-Bomber;cd Master-Bomber;chmod +x Master-Bomber.sh;./Master-Bomber.sh
 ```
 
 # CONTACT ME:
