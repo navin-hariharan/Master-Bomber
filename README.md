@@ -42,12 +42,12 @@ Run these commands to run Master-Bomber
 
 ### > For Termux:
 ```
-pkg install git python;cd;cd scripts;cd Social-Attacks;git clone https://github.com/navin-hariharan/Master-Bomber;cd Master-Bomber;chmod +x *;./Master-Bomber.sh
+pkg install git python;cd;mkdir scripts;cd scripts;mkdir Social-Attacks;cd Social-Attacks;git clone https://github.com/navin-hariharan/Master-Bomber;cd Master-Bomber;chmod +x *;./Master-Bomber.sh
 ```
 
 ### > For Linux:
 ```
-sudo apt install git python;cd;cd scripts;cd Social-Attacks;git clone https://github.com/navin-hariharan/Master-Bomber;cd Master-Bomber;chmod +x Master-Bomber.sh;./Master-Bomber.sh
+sudo apt install git python;cd;mkdir scripts;cd scripts;mkdir Social-Attacks;cd Social-Attacks;git clone https://github.com/navin-hariharan/Master-Bomber;cd Master-Bomber;chmod +x Master-Bomber.sh;./Master-Bomber.sh
 ```
 
 # CONTACT ME:
