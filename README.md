@@ -50,6 +50,11 @@ pkg install git python;cd;if [ -d /scripts ]; then echo 'Exists'; else mkdir scr
 sudo apt install git python;cd;if [ -d /scripts ]; then echo 'Exists'; else mkdir scripts;cd scripts;mkdir Social-Attacks; fi;cd Social-Attacks;git clone https://github.com/navin-hariharan/Master-Bomber;cd Master-Bomber;chmod +x Master-Bomber.sh;./Master-Bomber.sh
 ```
 
+## Support Mee.....
+
+<a href="https://www.buymeacoffee.com/navinhariharan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" width="217px" ></a> 
+
+
 # CONTACT ME:
 
 Feel Free To Open An Issue...
