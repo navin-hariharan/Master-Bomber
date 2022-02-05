@@ -1,7 +1,7 @@
 <h1 align="center">Master-Bomber</h1>
 
 <p align="center">
-  <img src="https://github.com/navin-hariharan/Master-Bomber/blob/master/MasterBomber.png"><br>
+  <img src="https://github.com/navin-hariharan/Master-Bomber/blob/master/MASTERBOMBER.png"><br>
 </p>
 
 ## Note:
