@@ -1,8 +1,0 @@
-certifi
-tqdm
-chardet
-colorama
-urllib3
-idna
-requests
-boxes
