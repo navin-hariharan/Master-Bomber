@@ -15,17 +15,11 @@
 - **I am not responsible for the misuse of Master-Bomber.**
 <br>
 
-## UPDATE (2022.2):
-
-- Removed features that are no more working 😞
-- Improved persistence 
-- Code rewritten
-
 ## Features:
 
 - Lots of integrated SMS/call APIs
-- Unlimited and super-fast SMS bombing
-- Unlimited and super-fast CALL bombing
+- Super-fast SMS bombing
+- Super-fast CALL bombing
 
 ## DOWNLOAD:
 
@@ -35,6 +29,10 @@
 
 <a href="https://www.buymeacoffee.com/navinhariharan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" width="217px"></a> 
 
+## Special Thanks:
+- SMS Bomberz
+<br>
+<a href="https://t.me/sms_bomberz" target="_blank"><img src="https://www.pngitem.com/pimgs/m/214-2144731_groups-on-telegram-telegram-group-link-png-transparent.png" alt="Sms Bomberz Telegram" width="217px"></a> 
 
 # CONTACT ME:
 
