@@ -10,8 +10,6 @@ def worker(target):
     response = service.sendMessage(target)
     if response == None:
         pass
-    elif str(404) in str(response):
-        open('remove.txt', 'a+').write(str(response)+'\n')
     else:
         print(response)
 

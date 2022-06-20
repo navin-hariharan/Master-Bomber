@@ -1,6 +1,5 @@
 import json
 import requests
-from colorama import Fore
 import API.SMS.randomData as randomData
 
 def getServices(file="API/SMS/SMS.json"):
@@ -68,20 +67,15 @@ class Service:
             customHeaders = self.service["headers"]
             for key, value in json.loads(customHeaders.replace("'", '"')).items():
                 headers[key] = value
-        okay = f"{Fore.YELLOW}Service ({getDomain(url)}) >> Message sent!{Fore.RESET}"
-        error = f"{Fore.MAGENTA}Service ({getDomain(url)}) >> Failed to sent message!{Fore.RESET}"
-
         session = requests.Session()
         request = requests.Request("POST", url)
         request.headers = headers
-
         if dataType == "json":
             request.json = payload
         elif dataType == "data":
             request.data = payload
         elif dataType == "url":
             request.url = payload["url"]
-
         try:
             request = request.prepare()
             r = session.send(request, timeout=self.timeout, proxies=self.proxy)
