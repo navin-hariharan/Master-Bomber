@@ -1,4 +1,4 @@
-name: PROXY Updater
+name: API UPDATER
 
 on:
   push:
