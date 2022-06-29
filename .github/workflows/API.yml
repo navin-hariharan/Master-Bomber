@@ -19,3 +19,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         python main.py
+        
+        
+    - name: Commit Files
+      run: |
+        git config --local user.email ${{ secrets.GIT_EMAIL }}
+        git config --local user.name ${{ secrets.GIT_NAME }}
+        git commit -am "UPDATED API ✔"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        CI: true
