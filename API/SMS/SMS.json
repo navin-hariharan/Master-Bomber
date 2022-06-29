@@ -518,6 +518,10 @@
       {
          "url":"https://api-prime.anytime.global/api/v2/auth/sendVerificationCode",
          "data":"{'phone': '{target}'}"
+      },
+      {
+         "url":"https://junker.kiev.ua/postmaster.php",
+         "data":"{'tel':'{target}','name':'%name%','action':'callme'}"
       }
    ]
 }
