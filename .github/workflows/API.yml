@@ -3,7 +3,7 @@ name: API UPDATER
 on:
   push:
     paths:
-      - 'example.json'
+      - './API/SMS/SMS.json'
 
 jobs:
   build:
