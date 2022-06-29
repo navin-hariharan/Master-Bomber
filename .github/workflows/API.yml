@@ -20,9 +20,3 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         python main.py
-    - name: Install dependencies  
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: AUTOMATED API UPDATE
-        file_pattern: API/SMS/SMS.json
-        push_options: '--force'
