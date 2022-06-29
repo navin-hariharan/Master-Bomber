@@ -1,6 +1,9 @@
 name: API UPDATER
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'example.json'
 
 jobs:
   build:
