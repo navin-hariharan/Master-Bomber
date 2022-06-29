@@ -23,17 +23,6 @@ jobs:
     - name: Install dependencies  
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Automated Change
-        branch: feature-123
-        commit_options: '--no-verify --signoff'
+        commit_message: AUTOMATED API UPDATE
         file_pattern: API/SMS/SMS.json
-        repository: .
-        tagging_message: 'v1.0.0'
-        status_options: '--untracked-files=no'
-        add_options: '-u'
         push_options: '--force'
-        skip_dirty_check: true
-        skip_fetch: true
-        skip_checkout: true
-        disable_globbing: true
-        create_branch: true
