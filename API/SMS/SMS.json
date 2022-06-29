@@ -514,10 +514,6 @@
       {
          "url":"https://api.carsmile.com/",
          "json":"{'operationName': 'enterPhone','variables': {'phone': '{target}'},'query': 'mutation enterPhone($phone: String!) { enterPhone(phone: $phone)}'}"
-      },
-      {
-         "url":"https://api-prime.anytime.global/api/v2/auth/sendVerificationCode",
-         "data":"{'phone': '{target}'}"
       }
    ]
 }
