@@ -4,6 +4,8 @@ from API.SMS.sms import bomb
 
 app = FastAPI()
 
+print('helo')
+
 @app.get("/number/{item_id}")
 async def read_item(item_id: int, q: Union[str, None] = None):
     number = str(item_id)
