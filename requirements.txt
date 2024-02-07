@@ -1,3 +1,3 @@
 fake_headers==1.0.2
-fastapi==0.78.0
+fastapi==0.109.1
 requests==2.27.1
