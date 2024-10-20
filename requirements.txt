@@ -1,3 +1,4 @@
 fake_headers==1.0.2
 fastapi==0.78.0
 requests==2.27.1
+starlette>=0.40.0 # not directly required, pinned by Snyk to avoid a vulnerability
