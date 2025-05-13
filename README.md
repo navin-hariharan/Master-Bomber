@@ -15,6 +15,31 @@
 - **I am not responsible for the misuse of Master-Bomber.**
 <br>
 
+## Installation:
+
+1. Make sure you have Python 3.7+ installed. Download from [Python.org](https://python.org)
+
+2. Clone the repository:
+```bash
+git clone https://github.com/yourusername/Master-Bomber.git
+cd Master-Bomber
+```
+
+3. Install required packages:
+```bash
+pip install -r requirements.txt
+pip install "uvicorn[standard]"
+```
+
+4. Run the application:
+```bash
+python main.py
+```
+
+5. Access the API:
+- Open your browser and visit: `http://localhost:8000/number/{phone_number}`
+- Replace `{phone_number}` with a 10-digit Indian phone number (without spaces)
+
 ## Features:
 
 - Lots of integrated SMS/call APIs
