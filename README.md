@@ -48,7 +48,7 @@ python main.py
 
 ## DOWNLOAD:
 
-<a href="https://github.com/navin-hariharan/Master-Bomber/releases/download/v0.0.1/MASTER-BOMBER.apk" target="_blank"><img src="https://www.pnglib.com/wp-content/uploads/2021/02/black-button_6021f0b6c730e.png" alt="DOWNLOAD" width="217px"></a>
+<a href="https://github.com/navin-hariharan/Master-Bomber/releases/download/v0.0.1/MASTER-BOMBER.apk" target="_blank"><img src="https://www.pngplay.com/wp-content/uploads/6/Black-Download-Button-PNG-Clipart-Background.png" alt="DOWNLOAD" width="217px"></a>
 
 ## Support Mee.....
 
