@@ -21,7 +21,7 @@
 
 2. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Master-Bomber.git
+git clone https://github.com/navin-hariharan/Master-Bomber
 cd Master-Bomber
 ```
 
